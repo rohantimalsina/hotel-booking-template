@@ -14669,14 +14669,6 @@ background: #bb0000;
 color: white;
 }
 
-
-.events .content {
-  display: none;
-}
-.events a:hover + .content{
-  display: block;
-}
-
 .img-side {
   flex: 50%;
   padding: 30px;
@@ -14725,3 +14717,113 @@ color: white;
       width: 40%;
     }
   }
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #232323;
+  }
+  
+  .events-item:hover .overlay {
+    opacity: 80%;
+  }
+
+  .events-item:hover .events-content {
+    display: none;
+  }
+
+  .text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .hotel-name{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .hotel-price{
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .hotel-phone{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .hotel-email{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .hotel-address{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .hotel-book{
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .overlay .hotel-book a {
+    color: #fff;
+    background-color: #d8342c;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS'!important;
+    border: 2px solid #d8342c;
+    padding: 9px 27px;
+    border-radius: 5px; }
